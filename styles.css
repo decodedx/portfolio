@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: 'Black Ops One', cursive;
+}
+
+body > div{
+    width: 50%;
+    height: 100%;
+}
+
+body > div > h1{
+    text-align: center;
+    font-weight: 400;
+}
+
