@@ -1,22 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css">
-    <title>Main</title>
+    <title>Decoded | Portfolio en desarrollo</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            margin: 0 5%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            font-family: 'Segoe UI';
+        }
+
+        .website {
+            justify-self: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .website .img-container {
+            width: 300px;
+            height: 150px;
+        }
+
+        .website .img-container img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .website a {
+            display: block;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            width: 250px;
+
+            color: rgb(33, 33, 33);
+            text-decoration: none;
+            text-align: center;
+            padding: 7px 0;
+            border-radius: 12px;
+            /* border: 2px solid rgb(33, 33, 33); */
+            box-shadow: 2px 2px 5px rgba(33, 33, 33, 0.197);
+            transition: all .1s ease-in;
+        }
+
+        .website a:hover {
+            color: white;
+            background-color: rgb(33, 33, 33);
+        }
+    </style>
 </head>
+
 <body>
-    <div class="redHive">
-        <h1>RED HIVE</h1>
-        <a href="./RedHive/contacto/index.html">• Contacto</a>
+    <div class="website redHive">
+        <div class="img-container">
+            <img src="_assets/logo-red-hive.svg" alt="">
+        </div>
+        <div class="links">
+            <a target="_blank" href="./RedHive/contacto/index.html">Contacto 🦝</a>
+        </div>
     </div>
-    <div class="turismoArgentina">
-        <h1>TURISMO AVENTURA</h1>
-        <a href="./TurimoAventura/paquetes/index.html">• Paquetes</a>
+    <div class="website turismoAventura">
+        <div class="img-container">
+            <img src="_assets/logo-turismo-aventura.svg" alt="" style="transform: scale(1.08);">
+        </div>
+        <div class="links">
+            <a target="_blank" href="./TurimoAventura/paquetes/index.html">Paquetes 🦝</a>
+            <a target="_blank" href="./TurimoAventura/nosotros/nosotros.html">Nosotros 🐺</a>
+            <a target="_blank" href="">Contacto 🐼</a>
+        </div>
+    </div>
+    <div class="website bytes">
+        <div class="img-container">
+            <img src="_assets/logo-bytes.svg" alt="" style="transform: scale(0.80);">
+        </div>
     </div>
 </body>
+
 </html>

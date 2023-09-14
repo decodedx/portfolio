@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo Aventura | Nosotros</title>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">  -->
+    <link rel="stylesheet" href="nosotros.css">
+</head>
+
+<body>
+    <div id="dimensions">
+        <p id="width">...</p>
+        <p id="height">...</p>
+    </div>
+    <main>
+        <section id="s1">
+            <h1>NOSOTROS</h1>
+        </section>
+        <section id="s2">
+            <section class="right">
+                <div class="content-wrapper">
+                    <div>
+                        <h2>TÍTUTLO</h2>
+                        <div class="text">
+                            <p>En Turismo Aventura, somos apasionados viajeros y exploradores que creen que el mundo está lleno de aventuras esperando ser descubiertas.</p>
+                            <p>Fundado con un amor inquebrantable por la exploración y la diversidad cultural, nuestro equipo se dedica a inspirar y ayudar a otros a descubrir la belleza del mundo que nos rodea.</p>
+                            <p>Nuestra misión es simple: queremos brindarte las herramientas y la información necesarias para planificar tus viajes de manera más sencilla y emocionante. <!-- Ya sea que estés buscando playas de ensueño, aventuras en la montaña o una experiencia cultural única, estamos aquí para proporcionarte consejos expertos, guías detalladas y cuidadosamente seleccionadas. --></p> 
+                        </div>
+                    </div>    
+                </div>
+                <img src="img/nosotros-s2.jpg" alt="">
+            </section>
+            <section class="left">
+                <img src="img/nosotros-s2-2.jpg" alt="">
+                <div class="content-wrapper">
+                    <div>
+                        <h2>TÍTUTLO</h2>
+                        <div class="text">
+                            <p>En Turismo Aventura, estamos emocionados de compartir nuestras pasiones y conocimientos contigo.</p>
+                            <p>Ya sea tu primer viaje o el próximo de una larga lista, esperamos que encuentres inspiración y recursos valiosos para hacer de tus aventuras de viaje una experiencia verdaderamente inolvidable.</p>
+                            <p>Gracias por confiar en nosotros para ser tu compañero de viaje. ¡Bienvenido a la comunidad de Turismo Aventura!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+    <script>
+        const width = document.getElementById('width');
+        const height = document.getElementById('height');
+        function showDimensions() {
+            width.textContent = `Width: ${document.documentElement.clientWidth}px`;
+            height.textContent = `Height: ${document.documentElement.clientHeight}px`;
+        }
+        showDimensions();
+        window.addEventListener('resize', showDimensions)
+    </script>
+</body>
+
+</html>
