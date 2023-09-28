@@ -1,0 +1,170 @@
+/*font-family: 'Bebas Neue', sans-serif;
+font-family: 'Montserrat', sans-serif;*/
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+@media screen and (min-width: 900px) { 
+    .hamb{
+        display: none;
+    }
+    
+    .navBar{
+        width: 100%;
+        height: 10%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        column-gap: 10%;
+        background: rgba(0, 163, 255, 0.85);
+    }
+
+    .home-menu > a{
+        text-decoration: none;
+        font-family: 'Bebas Neue', sans-serif;
+        color: white;
+        font-size: 1.5vw;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+
+    .menu{
+        width: 45%;
+        display: flex;
+        justify-content: space-between;
+
+    }
+    
+    .underline{ /*Efecto para realizar el hover*/
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.2vw;
+        font-weight: 700;
+        color: white;
+        display: inline-block;
+        position: relative;
+    }
+    
+    .menu > a:nth-child(2):after { /*Se coloca */
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 0.3vh;
+        background: white;
+        bottom: 0;
+        left: 0;
+    }
+
+    .underline:not(:nth-child(2)):after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 0.3vh;
+        bottom: 0;
+        left: 0;
+        background: white;
+        transform-origin: bottom right;
+        transition: transform 0.2s ease-out;
+    }
+      
+    .underline:not(:nth-child(2)):hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .navBar{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: rgba(0, 163, 255, 0.85);
+    }
+
+    .navBar-Border{
+        border-radius: 0 0 20px 20px;
+        transition: all 0.3s linear;
+    }
+    
+    .home-menu{
+        width: 90%;
+        height: 10vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .home-menu > a{
+        text-decoration: none;
+        font-family: 'Bebas Neue', sans-serif;
+        color: white;
+        font-size: 5vw;
+        font-weight: 400;
+        transition: opacity 0.3s linear;
+    }
+
+    .titleOpacity{opacity: 0;}
+    
+    .hamb{
+        width: 12%; 
+        cursor: pointer; 
+    }
+    
+    .hamb hr {
+        height: 0.25vh;
+        border: solid 1px white;
+        border-radius: 50px;
+        margin: 4.5px;
+        background-color: white;
+        transition: all 0.2s linear;
+    }
+    
+    .oneClick{transform: rotate(-45deg) translate(-6px, 6px);}
+    .twoClick{opacity: 0;}
+    .trheeClick{transform: rotate(45deg) translate(-6px, -6px);}
+    
+    
+    .menu{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        overflow-y: hidden;
+        height: 0;
+        transition: height 0.3s linear;
+    }
+    
+    .menu > a{
+        width: 99%;
+        padding: 2.5% 0 2.5% 0;
+        text-decoration: none;
+        text-align: center;
+        font-size: 5vw;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        background: rgba(0, 163, 255, 0.85);
+        box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        opacity: 0;
+        transition: opacity 0.3s linear;
+    }
+
+    .menu > a:nth-child(1){
+        background: rgba(83, 192, 255);
+    }
+    
+    .menuClick{height: 50vh;}
+    .menuClick > a{opacity: 1;}
+}

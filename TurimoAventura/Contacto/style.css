@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+/* header{
+    background-color: #00A3FF;
+    display: flex;
+} */
+main{
+    background-image: url(/img/pexels-nans-3381105.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: 100% 10%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenedor-contenido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+    color: white;
+    height: 60%;
+    text-align: left;
+    
+}
+.contactanos{
+    background-color: rgba(0, 0, 0, 0.600);
+    width: 40%;
+    margin-right: 5%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10%;
+/*  font-family: 'Bebas Neue', sans-serif; */
+    border-radius: 14px;
+}
+.contactanos h1{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    margin-top: 5%;
+
+}
+.contactanos p{
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+}
+
+
+
+
+.formulario{
+    background-color: rgba(0, 0, 0, 0.600);
+    width: 40%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    border-radius: 14px;
+    
+}
+
+.formulario .input{
+    width: 600px;
+    height: 50px; 
+    border-radius: 10px;
+    background: #D9D9D9;
+    text-decoration: none; 
+    margin-left: 5%;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    
+}
+.formulario .descripcion{
+    width: 680px;
+    height: 200px; 
+    border-radius: 10px;
+    background: #D9D9D9;
+    text-decoration: none;
+    text-align: left;
+    vertical-align: top;
+
+    margin-left: 5%;
+    resize: none;
+
+}
+.formulario h4{
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; 
+    margin-top: 2%;
+    margin-bottom: 1%;
+    margin-left: 5%;
+}
+.formulario ::placeholder{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; 
+    padding: 10px;
+}
+textarea{
+    padding: 10px;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; 
+}
+.formulario .boton{
+    width: 15%;
+    height: 10%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    /* display: flex;
+    justify-content: space-evenly; */
+    
+}
+.formulario button{
+    font-family: Bebas Neue;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase; 
+    width: 100%;
+    height: 100%;
+    background-color: #D2A48A;
+    color: white;
+    border-radius: 10px;
+    margin-left: 35%;
+    cursor: pointer;
+}
+
+
+
+
+
+
+@media (max-width: 430px){
+
+
+
+    *{
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        border: none;
+        outline: none;
+    }
+    /* .contenedor-sitio{
+        column-gap: 90%;
+    } */
+    main{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+
+    }
+
+    .contenedor-contenido{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center;
+        align-items: center; */
+        /* background-color: aqua; */
+        color: white;
+        height: 60%;
+        width: 100%;
+        text-align: left;
+    }
+    .contactanos{
+        background-color: rgba(0, 0, 0, 0.600);
+        width: 80%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    /*  font-family: 'Bebas Neue', sans-serif; */
+        border-radius: 14px;
+        margin-bottom: 5%;
+    }
+
+    .contactanos h1{
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal; 
+        margin-top: 5%;
+    }
+    .contactanos p{
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal; 
+        margin-left: 9px;
+        margin-right: 9px;
+    }
+    
+
+
+
+    .formulario{
+        background-color: rgba(0, 0, 0, 0.600);
+        width: 80%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 14px;
+    }
+    .formulario .input{
+        width: 200px;
+        height: 20px; 
+        border-radius: 10px;
+        background: #D9D9D9;
+        text-decoration: none; 
+        margin-left: 7%;
+        font-family: Montserrat;
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        
+    }
+    .formulario .descripcion{
+        width: 290px;
+        height: 82px; 
+        border-radius: 10px;
+        background: #D9D9D9;
+        text-decoration: none;
+        text-align: left;
+        vertical-align: top;
+        resize: none;
+    
+    }
+    .formulario h4{
+        font-family: Montserrat;
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal; 
+        margin-top: 2%;
+        margin-bottom: 1%;
+        margin-left: 8%;
+    }
+    .formulario ::placeholder{
+        font-family: Montserrat;
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal; 
+    }
+    textarea{
+        padding: 10px;
+        font-family: Montserrat;
+        font-size: 5px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal; 
+    }
+    .formulario .boton{
+        width: 15%;
+        height: 10%;
+        margin-top: 1.5%;
+        margin-bottom: 1.5%;
+        /* display: flex;
+        justify-content: space-evenly; */
+        
+    }
+    .formulario button{
+        font-family: Bebas Neue;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 50px;
+        height: 30px;
+        background-color: #D2A48A;
+        color: white;
+        border-radius: 22px;
+        margin-left: 33%;
+        cursor: pointer;
+    }
+   /*  .contenedor-descripcion h4{
+    }
+ */
+
+
+
+
+
+
+
+
+
+
+}

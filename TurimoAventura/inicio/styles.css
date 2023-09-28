@@ -1,0 +1,693 @@
+/*font-family: 'Bebas Neue', sans-serif;
+font-family: 'Montserrat', sans-serif;*/
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+@media screen and (min-width: 900px) { 
+
+    /*B A R R A   D E   N A V E G A C I O N*/
+    .hamb{
+        display: none;
+    }
+    
+    .navBar{
+        position: fixed;
+        width: 100%;
+        height: 10%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        column-gap: 10%;
+        background: rgba(0, 163, 255, 0.85);
+    }
+
+    .home-menu > a{
+        text-decoration: none;
+        font-family: 'Bebas Neue', sans-serif;
+        color: white;
+        font-size: 1.5vw;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+
+    .menu{
+        width: 45%;
+        display: flex;
+        justify-content: space-between;
+
+    }
+    
+    .underline{ /*Efecto para realizar el hover*/
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.2vw;
+        font-weight: 700;
+        color: white;
+        display: inline-block;
+        position: relative;
+    }
+    
+    .menu > a:nth-child(1):after { /*Se coloca */
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 0.3vh;
+        background: white;
+        bottom: 0;
+        left: 0;
+    }
+
+    .underline:not(:nth-child(1)):after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 0.3vh;
+        bottom: 0;
+        left: 0;
+        background: white;
+        transform-origin: bottom right;
+        transition: transform 0.2s ease-out;
+    }
+      
+    .underline:not(:nth-child(1)):hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+    /*S E C C I O N   1*/
+    .section1{
+        width: 100%;
+        height: 100vh;
+        background-image: url(./assets/vista-montana-2.jpg);
+        background-size: cover;
+        background-position: 100% 50%;
+        display: grid;
+        place-items: center;
+    }
+
+    .section1 > div{
+        width: 40%;
+        height: 18%;
+        border-radius: 10px;
+        background: rgba(0, 0, 0, 0.60);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 5%;
+    }
+
+    .section1 > div > h1{
+        font-family: 'Bebas Neue', sans-serif;
+        font-weight: 400;
+        font-size: 3.7vw;
+    }
+
+    .section1 > div > h4{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 1.2vw;
+    }
+
+    /*S E C C I O N   2*/
+    .section2, 
+    .section4, 
+    .section6{
+        width: 100%;
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 6%;
+        background: #DDF3FF;
+    }
+
+    .section2 > div, 
+    .section4 > div,
+    .section6 > div{
+        width: 14%;
+        height: 70%;
+        border-radius: 50%;
+        background-size: cover;
+        background-position: 100% 70%;
+        box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.20);
+        overflow: hidden;
+    }
+
+    .img-mask{
+        width: 100%;
+        height: 100%;
+        color: white;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 2.5vw;
+        font-weight: 400;
+        display: grid;
+        place-items: center;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%);
+        opacity: 0;
+        transition: opacity 0.2s linear;
+    }
+
+    .img-mask:hover {
+        opacity: 1;
+    }
+
+    .section2 > div:nth-child(1), .section6 > div:nth-child(1){background-image: url(./assets/montana-view-top.jpg);}
+    .section2 > div:nth-child(2), .section6 > div:nth-child(2){background-image: url(./assets/vista-de-playa.jpg);}
+    .section2 > div:nth-child(3), .section6 > div:nth-child(3){background-image: url(./assets/acampar.jpg);}
+    .section2 > div:nth-child(4), .section6 > div:nth-child(4){background-image: url(./assets/pexels-nans-3381105.jpg);}
+
+
+    /*S E C C I O N   3*/
+
+    .section3, .section5{
+        width: 100%;
+        height: 50%;
+        background-image: url(./assets/paseoEnLaMontaña.jpg);
+        background-size: cover;
+        background-position: 100% 72%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section3 > div, .section5 > div{width: 43%;}
+    .section3 > div:nth-child(1), .section5 > div:nth-child(2){width: 48%;}
+
+    .section3 > div:nth-child(2),
+    .section5 > div:nth-child(1){
+        height: 110%;
+        border-radius: 10px;
+        background: rgba(0, 163, 255, 0.85);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 4%;
+        padding: 0 2% 0 3%;
+        color: white;
+    }
+
+    .section3 > div:nth-child(2) > h3,
+    .section5 > div:nth-child(1) > h3{
+        font-family: 'Bebas Neue', sans-serif;
+        font-weight: 400;
+        font-size: 2.5vw;
+    } 
+
+    .section3 > div:nth-child(2) > p,
+    .section5 > div:nth-child(1) > p{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 0.9vw;
+    }
+
+    .button{
+        width: 25%;
+        height: 10%;
+        border-radius: 50px;
+        background: #D2A48A;
+        display: grid;
+        place-items: center;
+        font-size: 1vw;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+    }
+
+    /*S E C C I O N   4*/
+
+    .section4 > div{border-radius: 10px;}
+    .section4 > div:nth-child(1){background-image: url(./assets/acampando.jpg); background-position: 50% 100%;}
+    .section4 > div:nth-child(2){background-image: url(./assets/cascada.jpg);}
+    .section4 > div:nth-child(3){background-image: url(./assets/vista-de-montana.jpg); background-position: 50% 100%;}
+
+
+    /*S E C C I O N   5*/
+
+    .section5{
+        background-image: url(./assets/vista-de-montana.jpg);
+        background-position: 100% 50%;
+    }
+
+    /*F O O T E R*/
+
+    footer{
+        width: 100%;
+        height: 44%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: black;
+    }
+
+    .black{
+        height: 85%;
+        width: 86%;
+        color: white;
+    }
+
+    .footer-title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2%;
+    }
+
+    .footer-title > hr{
+        width: 37%;
+        background-color: white;
+        border: 1px solid white;
+    }
+
+    .footer-title > h2{
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 3.4vw;
+        text-align: center;
+        font-weight: 400;
+    }
+
+    .footer-content{
+        height: 40%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-content > div{
+        width: 12%;
+    }
+
+    .article > h3{
+        font-family: 'Bebas Neue', sans-serif;
+        font-weight: 400;
+        font-size: 2vw;
+    }
+
+    .art-one > p{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.9vw;
+    }
+
+    .art-two{text-align: center;}
+
+    .art-two > h4{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.4vw;
+        font-weight: 400;
+    }
+
+    .art-three{
+        display: flex;
+        align-items: end;
+        flex-direction: column;
+    }
+
+    .art-three > h3{font-size: 1.6vw;}
+
+    .social-media{
+        width: 65%;
+        text-align: end;
+    }
+
+    .social-media > a > img{width: 3vw;}
+
+    .white{
+        background-color: white;
+        height: 15%;
+        width: 100%;
+        display: grid;
+        place-items: center;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+}
+
+@media screen and (max-width: 440px) {
+
+    /*B A R R A   D E   N A V E G A C I O N*/
+    .navBar{
+        position: fixed;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: rgba(0, 163, 255, 0.85);
+    }
+
+    .navBar-Border{
+        border-radius: 0 0 20px 20px;
+        transition: all 0.3s linear;
+    }
+    
+    .home-menu{
+        width: 90%;
+        height: 10vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .home-menu > a{
+        text-decoration: none;
+        font-family: 'Bebas Neue', sans-serif;
+        color: white;
+        font-size: 5vw;
+        font-weight: 400;
+        transition: opacity 0.3s linear;
+    }
+
+    .titleOpacity{opacity: 0;}
+    
+    .hamb{
+        width: 12%; 
+        cursor: pointer; 
+    }
+    
+    .hamb hr {
+        height: 0.25vh;
+        border: solid 1px white;
+        border-radius: 50px;
+        margin: 4.5px;
+        background-color: white;
+        transition: all 0.2s linear;
+    }
+    
+    .oneClick{transform: rotate(-45deg) translate(-6px, 6px);}
+    .twoClick{opacity: 0;}
+    .trheeClick{transform: rotate(45deg) translate(-6px, -6px);}
+    
+    
+    .menu{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        overflow-y: hidden;
+        height: 0;
+        transition: height 0.3s linear;
+    }
+    
+    .menu > a{
+        width: 99%;
+        padding: 2.5% 0 2.5% 0;
+        text-decoration: none;
+        text-align: center;
+        font-size: 5vw;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        background: rgba(0, 163, 255, 0.85);
+        box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        opacity: 0;
+        transition: opacity 0.3s linear;
+    }
+
+    .menu > a:nth-child(1){
+        background: rgba(83, 192, 255);
+    }
+    
+    .menuClick{height: 50vh;}
+    .menuClick > a{opacity: 1;}
+
+
+    /*S E C C I O N   1*/
+    
+    .section1{
+        width: 100%;
+        height: 100vh;
+        background-image: url(./assets/vista-montana-2.jpg);
+        background-size: cover;
+        background-position: 40% 100%;
+        display: grid;
+        place-items: center;
+    }
+
+    .section1 > div{
+        width: 100%;
+        height: 18%;
+        background: rgba(0, 0, 0, 0.60);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 5%;
+    }
+
+    .section1 > div > h1{
+        font-family: 'Bebas Neue', sans-serif;
+        font-weight: 400;
+        font-size: 12vw;
+    }
+
+    .section1 > div > h4{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 4vw;
+    }
+
+    /*S E C C I O N   2*/
+    .section2, 
+    .section4{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 8%;
+        background: #DDF3FF;
+    }
+
+    .section2 > div, 
+    .section4 > div{
+        width: 60%;
+        height: 40%;
+        border-radius: 50%;
+        background-size: cover;
+        background-position: 100% 70%;
+        box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.20);
+        overflow: hidden;
+    }
+
+    .img-mask{
+        width: 100%;
+        height: 100%;
+        color: white;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 10vw;
+        font-weight: 400;
+        display: grid;
+        place-items: center;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%);
+        opacity: 0;
+        transition: opacity 0.2s linear;
+    }
+
+    .img-mask:hover {
+        opacity: 1;
+    }
+
+    .section2 > div:nth-child(1), .section6 > div:nth-child(1){background-image: url(./assets/montana-view-top.jpg);}
+    .section2 > div:nth-child(2), .section6 > div:nth-child(2){background-image: url(./assets/vista-de-playa.jpg);}
+    .section2 > div:nth-child(3), .section6 > div:nth-child(3){display: none;}
+    .section2 > div:nth-child(4), .section6 > div:nth-child(4){display: none;}
+
+
+    /*S E C C I O N   3*/
+
+    .section3, .section5{
+        width: 100%;
+        height: 80%;
+        background-image: url(./assets/paseoEnLaMontaña.jpg);
+        background-position: 45% 75%;
+        background-size: 550%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section3 > div, .section5 > div{width: 80%;}
+    .section3 > div:nth-child(1), .section5 > div:nth-child(2){display: none;}
+
+    .section3 > div:nth-child(2),
+    .section5 > div:nth-child(1){
+        height: 100%;
+        border-radius: 10px;
+        background: rgba(0, 163, 255, 0.85);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 3%;
+        margin-top: 20%;
+        color: white;
+    }
+
+    .section3 > div:nth-child(2) > h3,
+    .section5 > div:nth-child(1) > h3{
+        font-family: 'Bebas Neue', sans-serif;
+        font-weight: 400;
+        font-size: 15vw;
+        text-align: center;
+    } 
+
+    .section3 > div:nth-child(2) > p,
+    .section5 > div:nth-child(1) > p{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 3vw;
+        width: 90%;
+    }
+
+    .button{
+        width: 80%;
+        height: 10%;
+        border-radius: 10px;
+        background: #D2A48A;
+        display: grid;
+        place-items: center;
+        font-size: 6vw;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+    }
+
+    /*S E C C I O N   4*/
+
+    .section4 {height: 120%; row-gap: 4%;}
+    .section4 > div{
+        border-radius: 10px;
+        height: 25%;
+    }
+    .section4 > div:nth-child(1){background-image: url(./assets/acampando.jpg); background-position: 50% 100%;}
+    .section4 > div:nth-child(2){background-image: url(./assets/cascada.jpg);}
+    .section4 > div:nth-child(3){background-image: url(./assets/vista-de-montana.jpg); background-position: 50% 100%;}
+
+
+    /*S E C C I O N   5*/
+
+    .section5{
+        background-image: url(./assets/vista-de-montana.jpg);
+        background-position: 50% 50%;
+        background-size: 700%;
+    }
+
+    .section5 > div:nth-child(1){
+        margin-bottom: 40%;
+    }
+
+    /*S E C C I O N   6*/
+
+    .section6{display: none;}
+
+    /*F O O T E R*/
+
+    footer{
+        width: 100%;
+        height: 44%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: black;
+    }
+
+    .black{
+        height: 85%;
+        width: 86%;
+        color: white;
+    }
+
+    .footer-title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2%;
+    }
+
+    .footer-title > hr{
+        width: 25%;
+        background-color: white;
+        border: 1px solid white;
+    }
+
+    .footer-title > h2{
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 8.5vw;
+        text-align: center;
+        font-weight: 400;
+    }
+
+    .footer-content{
+        height: 70%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .footer-content > div{
+        height: 40%;
+        width: 40%;
+        text-align: center;
+        padding-top: 10%;
+    }
+
+    .footer-content > div:nth-child(2){
+        height: 90%;
+        padding-top: 0%;
+    }
+
+    .article > h3{
+        font-family: 'Bebas Neue', sans-serif;
+        font-weight: 400;
+        font-size: 6.5vw;
+    }
+
+    .art-one > p{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.5vw;
+    }
+
+    .art-two > h4{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 4vw;
+        font-weight: 400;
+    }
+
+    .art-three{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .art-three > h3{font-size: 4.5vw;}
+
+    .social-media{
+        width: 100%;
+    }
+
+    .social-media > a > img{width: 10vw;}
+
+    .white{
+        background-color: white;
+        height: 15%;
+        width: 100%;
+        display: grid;
+        place-items: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3vw;
+    }
+}

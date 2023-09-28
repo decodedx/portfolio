@@ -1,0 +1,212 @@
+/*font-family: 'Bebas Neue', sans-serif;
+font-family: 'Montserrat', sans-serif;*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: grey;
+}
+
+@media screen and (min-width: 900px) { 
+    .vacio{
+        height: 56%;
+    }
+
+    footer{
+        width: 100%;
+        height: 44%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: black;
+    }
+
+    .black{
+        height: 85%;
+        width: 86%;
+        color: white;
+    }
+
+    .footer-title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2%;
+    }
+
+    .footer-title > hr{
+        width: 37%;
+        background-color: white;
+        border: 1px solid white;
+    }
+
+    .footer-title > h2{
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 3.4vw;
+        text-align: center;
+        font-weight: 400;
+    }
+
+    .footer-content{
+        height: 40%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-content > div{
+        width: 12%;
+    }
+
+    .article > h3{
+        font-family: 'Bebas Neue', sans-serif;
+        font-weight: 400;
+        font-size: 2vw;
+    }
+
+    .art-one > p{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.9vw;
+    }
+
+    .art-two{text-align: center;}
+
+    .art-two > h4{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.4vw;
+        font-weight: 400;
+    }
+
+    .art-three{
+        display: flex;
+        align-items: end;
+        flex-direction: column;
+    }
+
+    .art-three > h3{font-size: 1.6vw;}
+
+    .social-media{
+        width: 65%;
+        text-align: end;
+    }
+
+    .social-media > a > img{width: 3vw;}
+
+    .white{
+        background-color: white;
+        height: 15%;
+        width: 100%;
+        display: grid;
+        place-items: center;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .vacio{
+        height: 56%;
+    }
+
+    footer{
+        width: 100%;
+        height: 44%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: black;
+    }
+
+    .black{
+        height: 85%;
+        width: 86%;
+        color: white;
+    }
+
+    .footer-title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2%;
+    }
+
+    .footer-title > hr{
+        width: 25%;
+        background-color: white;
+        border: 1px solid white;
+    }
+
+    .footer-title > h2{
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 8.5vw;
+        text-align: center;
+        font-weight: 400;
+    }
+
+    .footer-content{
+        height: 70%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .footer-content > div{
+        height: 40%;
+        width: 40%;
+        text-align: center;
+        padding-top: 10%;
+    }
+
+    .footer-content > div:nth-child(2){
+        height: 90%;
+        padding-top: 0%;
+    }
+
+    .article > h3{
+        font-family: 'Bebas Neue', sans-serif;
+        font-weight: 400;
+        font-size: 6.5vw;
+    }
+
+    .art-one > p{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.5vw;
+    }
+
+    .art-two > h4{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 4vw;
+        font-weight: 400;
+    }
+
+    .art-three{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .art-three > h3{font-size: 4.5vw;}
+
+    .social-media{
+        width: 100%;
+    }
+
+    .social-media > a > img{width: 10vw;}
+
+    .white{
+        background-color: white;
+        height: 15%;
+        width: 100%;
+        display: grid;
+        place-items: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3vw;
+    }
+}
