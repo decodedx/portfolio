@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo Aventura | Nosotros</title>
+    <link rel="stylesheet" href="hospedajes.css">
+</head>
+
+<body>
+    <div id="dimensions">
+        <p id="width">...</p>
+        <p id="height">...</p>
+    </div>
+    <script>
+        const width = document.getElementById('width');
+        const height = document.getElementById('height');
+        function showDimensions() {
+            width.textContent = `Width: ${document.documentElement.clientWidth}px / ${window.innerWidth}px`;
+            height.textContent = `Height: ${document.documentElement.clientHeight}px`;
+        }
+        showDimensions();
+        window.addEventListener('resize', showDimensions)
+    </script>
+
+    <main>
+        <section id="s1">
+            <h1>HOSPEDAJES</h1>
+        </section>
+        <section id="s2">
+            <section class="right">
+                <div class="content-wrapper">
+                    <div>
+                        <h2>REFGUIO TRÓPICAL</h2>
+                        <div class="text">
+                            <p>Este refugio ofrece una escapada única para aquellos que buscan sol, playas de arena blanca y aguas cristalinas.</p>
+                            <p>Nuestro alojamiento frente al mar te permite disfrutar de vistas panorámicas y acceso directo a la playa. 
+                            </p>
+                            <p>Relájate bajo las palmeras, bucea en arrecifes de coral cercanos o simplemente sumérgete en la tranquilidad de la isla. Es el lugar perfecto para una escapada tropical inolvidable.</p> 
+                        </div>
+                    </div>    
+                </div>
+                <img src="img/section1.jpg" alt="">
+            </section>
+            <section class="left">
+                <img src="img/section2.jpg" alt="">
+                <div class="content-wrapper">
+                    <div>
+                        <h2>ALPES LIBERTARIOS</h2>
+                        <div class="text">
+                            <p>Si buscas una experiencia alpina auténtica, nuestro hospedaje "Alpes Libertarios" es la elección ideal.</p>
+                            <p>Ubicado en una acogedora cabaña cerca de los majestuosos Alpes Libertarios, este alojamiento te sumerge en un entorno natural impresionante.</p>
+                            <p>Disfruta de vistas panorámicas de montañas nevadas, camina por senderos alpinos y relájate junto a una chimenea acogedora.</p>
+                            <p>Es el refugio perfecto para amantes de la montaña y aquellos que buscan la serenidad de la naturaleza. </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="right">
+                <div class="content-wrapper">
+                    <div>
+                        <h2>DOMO URBANO</h2>
+                        <div class="text">
+                            <p>Si prefieres la vida urbana, nuestro hospedaje "Domo Urbano" es una opción moderna y conveniente.</p>
+                            <p>Situado en una zona cercana a la urbanización, este elegante domo ofrece comodidades contemporáneas y fácil acceso a la vida citadina.</p>
+                            <p>Explora los restaurantes, tiendas y atracciones locales, y luego regresa a tu espacioso domo para descansar y recargar energías.</p>
+                            <p>Es la elección perfecta para quienes desean experimentar la emoción de la ciudad sin sacrificar el confort y la tranquilidad del alojamiento.</p>
+                        </div>
+                    </div>    
+                </div>
+                <img src="img/section3.jpg" alt="">
+            </section>
+        </section>
+        <section id="s3">
+            <div class="experience-sign">
+                <h2>Más de 10 años de experiencia</h2>
+                <p>Por que sabemos muy bien el servicio que te mereces</p>
+            </div>
+            <div class="booking">
+                <h3>Reserva rápida</h3>
+                <form>
+                    <div class="container">
+                        <label>Nombre y apellido</label>
+                        <input type="text">
+                    </div>
+                    <div class="container">
+                        <label>Correo electrónico</label>
+                        <input type="text">
+                    </div>
+                    <div class="container">
+                        <label>Teléfono</label>
+                        <input type="text">
+                    </div>
+                    <div class="container">
+                        <label>Fecha de entrada</label>
+                        <input type="date">
+                    </div>
+                    <div class="container">
+                        <label>Fecha de salida</label>
+                        <input type="date">
+                    </div>
+                    <div class="container">
+                        <label>Lugar de destino</label>
+                        <input type="text">
+                    </div>
+                </form>
+                <button>Reservar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
